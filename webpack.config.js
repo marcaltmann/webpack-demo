@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const WebpackManifestPlugin = require('webpack-manifest-plugin');
 
 module.exports = {
   entry: {
@@ -13,7 +12,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Output Management',
     }),
-    new WebpackManifestPlugin(),
   ],
   output: {
     filename: '[name].bundle.js',
